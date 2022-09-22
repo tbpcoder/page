@@ -1,0 +1,47 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html, body{
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#obj{
+    font-family: 'Special Elite', cursive;
+    background-color: rgba(15, 23, 46, 0.6);
+    width: 30rem;
+    display: flex;
+    height: 13rem;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    border-radius: 10%;
+}
+
+.img{
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    left: 29%;
+}
+
+img{
+    border-radius: 50%;
+    height: 12rem;
+    width: auto;
+}
