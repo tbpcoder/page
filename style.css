@@ -18,6 +18,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
+}
+
+.root{
+    position: relative;
 }
 
 #obj{
@@ -36,12 +41,33 @@ body{
 .img{
     position: absolute;
     z-index: 2;
-    top: 25%;
-    left: 29%;
+    top: -80px;
+    left: 84%;
 }
 
 img{
     border-radius: 50%;
-    height: 12rem;
+    height: 10rem;
     width: auto;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .root{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img{
+        position: static;
+        margin-bottom: 90px;
+    }
+
+    #obj{
+        width: 100vw;
+        border-radius: 0;
+    }
+
 }
